@@ -70,9 +70,10 @@ $(() => {
         if(promedio < MenorPromedio){
             MenorPromedio = promedio;
         }
+        // 3.0
 
         let InfoMenorPromedio = [];
-        if (informacionEstudiante[6] <= MayorPromedio) {
+        if (informacionEstudiante[6] <= MenorPromedio) {
             InfoMenorPromedio.push(informacionEstudiante[0]);
             InfoMenorPromedio.push(informacionEstudiante[1]);
             InfoMenorPromedio.push(informacionEstudiante[2]);
@@ -105,7 +106,7 @@ $(() => {
 
         //se valida que los dos campos a validar esten bien para proseguir a agregar la fila 
         if (NombreCorrecto == true && CedulaCorrecta == true && EdadCorrecta == true) {
-            parrafo.show(2000);
+            contenido.show(2000);
             $("#tbody").append(`
         <tr>
           <td>${informacionEstudiante[0]}</td>
@@ -143,9 +144,9 @@ $(() => {
             }
     }
    
-    let parrafo = $("#patu");
+    let contenido = $("#Efecto");
    
-        parrafo.hide();
+        contenido.hide();
 
     
     $("form").submit((e) => { e.preventDefault(); ValidarForm(); })
