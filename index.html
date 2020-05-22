@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Formulario</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="row section">
+      <div class="col-12">
+        <form class="rounded-lg p-4">
+            <div class="row mb-5" id="campo-titulo">
+                <div class="col-9" id="titulo">
+                    <h1>Formulario JQuery</h1>
+                </div>
+              </div>
+          <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+                <input class="form-control " type="text" name="nombre" id="nombre" placeholder="Nombre">
+              </div>
+              <div class="form-group">
+                <input class="form-control my-4" type="number" name="cedula" id="cedula" placeholder="Cedula">
+              </div>
+              <div class="form-group">
+                <input class="form-control my-4" type="date" name="Fnacimiento" id="Fnacimiento" placeholder="Fecha de nacimiento">
+              </div>
+
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+                <input
+                  class="form-control"step = "0.1" min = "0" max = "5" type="number" name="nota"placeholder="Nota 1">
+                <input
+                  class="form-control my-4" step = "0.1"min = "0" max = "5"type="number"name="nota"placeholder="Nota 2">
+                <input
+                  class="form-control my-4"step = "0.1"max = "5" min = "0" type="number" name="nota" placeholder="Nota 3">
+              </div>
+          </div>
+          </div>
+
+          <div><input class="btn btn-success" type="submit" value="Enviar" id="boton"></div>
+        </form>
+      </div>
+      <div class="row" id="patu"> 
+        <div class="col-8">
+            <h1 id="t">Registro Estudiantes</h1>
+        <table class="table" id="table">
+          <thead class="thead-success">
+            <tr>
+              <th>Cédula</th><th>Nombre</th><th>Edad</th><th>Nota 1</th><th>Nota 2</th><th>Nota 3</th><th>Promedio</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <!-- agregamos en este espacio la fila-->
+          </tbody>
+        </table>
+        </div>
+        <div class="col-4">
+            <div class="container">
+              <div class="row">
+                <h3 id="t2">MejorPromedio</h3>
+        <table class="table table-success">
+          <thead class="thead-success">
+            <tr>
+              <th>Cédula</th><th>Nombre</th><th>edad</th><th>Promedio</th>
+            </tr>
+          </thead >
+          <tbody id="tbody2">
+            <!-- agregamos en este espacio la fila-->
+        </tbody>
+        </table>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <h3 id="t2">PeorPromedio</h3>
+                <table class="table table-danger">
+                  <thead class="thead-danger">
+                    <tr>
+                      <th>Cédula</th><th>Nombre</th><th>edad</th><th>Promedio</th>
+                    </tr>
+                  </thead >
+                  <tbody id="tbody3">
+                    <!-- agregamos en este espacio la fila-->
+                </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="code.js"></script>
+</body>
+</html>

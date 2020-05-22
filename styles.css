@@ -1,0 +1,70 @@
+
+body{
+    background-color: #282028;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%2324ff45' fill-opacity='0.18'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+table thead{
+    background: #2f973e;
+    color:white;
+}
+
+
+
+table{
+    margin-left: 5px;
+}
+
+#t{
+    margin-left: 24%;
+
+}
+#t2{
+    color: white;
+    margin-top: 13%;
+    margin-left: 20%;
+}
+h1{
+    margin-left: 30%;
+    margin-top: 4%;
+    color: white;
+}
+
+#titulo{
+    margin-top: 0;
+    margin-left: 10%;
+    padding-bottom: 2%; 
+}
+
+#campo-titulo{
+    background:#2f973e;
+    color: white;
+}
+
+.btn{
+    margin-left: 40%;
+    width: 200px;
+}
+
+.btn:hover{
+    border: 2px solid white;
+}
+
+.promedio{
+   margin-left: 15%;
+}
+
+
+.color-verde{
+    background: #075728;
+    opacity: 0.7;
+    color: white;
+}
+
+
+.color-rojo{
+    background: #75130f;
+    opacity: 0.7;
+    color: white;
+}
+
