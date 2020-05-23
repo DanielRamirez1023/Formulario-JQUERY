@@ -122,8 +122,10 @@ $(() => {
             //se colorea la fila dpendiendo del promedio
             if (informacionEstudiante[informacionEstudiante.length - 1] >= 3.5) {
                 $("#tbody tr:last-child").addClass("color-verde");
-            } else {
+            } else if(informacionEstudiante[informacionEstudiante.length - 1] < 3.0){
                 $("#tbody tr:last-child").addClass("color-rojo");
+            }else{
+                $("#tbody tr:last-child").addClass("color-neutro");
             }
 
         }
